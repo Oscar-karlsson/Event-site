@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/app/image-modal.js"></script> 
+    <script src="/app/show-more.js"></script> 
+    <title>EntertainEd</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-header__navbar">
+        <div class="main-header__navbar-logo">
+           <a href="index.html"> <img src="/assets/logo.png" alt="logo-image"></a>
+        </div>
+        <ul class="main-header__navbar-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+    <main>
+        
+        <section class="event-page">
+            <div class="event-page__description">
+                <div class="event-page__main-image">
+                    <h1>FusionFest: A Multigenre Music Festival</h1>
+                    <img src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 1">
+                </div>
+                
+                <!-- <p><b>Categories:</b> Music Festival, Outdoor Event, Multigenre Music</p> -->
+                <div class="category-buttons">
+                    <button class="category-button" data-category-url="#">Music Festival</button>
+                    <button class="category-button" data-category-url="#">Outdoor Event</button>
+                    <button class="category-button" data-category-url="#">Multigenre Music</button>
+                    </div>
+                <p><b>Description:</b> FusionFest is an all-day music festival that celebrates the diversity of musical genres. It features multiple stages, showcasing artists from rock, pop, hip-hop, electronic, and more. Attendees can enjoy a mix of live performances, interactive art installations, and food vendors.</p>
+                <p><b>Location:</b> Central Park Amphitheater</p>
+                <p><b>Date:</b> Saturday, September 16th, 2023</p>
+            </div>
+            <div class="event-page__images">
+                <h2>Event Images:</h2>
+                <div class="event-page__image-container">
+                    <img src="https://images.unsplash.com/photo-1523973740062-18e700e8da35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80" alt="Event Image 1">
+                    <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60" alt="Event Image 2">
+                    <img src="https://images.unsplash.com/photo-1533137098665-47ca60257cec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 3">
+                    <img src="https://images.unsplash.com/photo-1505842465776-3b4953ca4f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 4">
+                </div>
+            </div>
+        </section>
+        <div class="event-page__image-modal">
+            <span class="close">&times;</span>
+            <img class="event-page__image-modal-content" id="modal-image">
+        </div>
+
+            
+    </main>
+    
+    <footer class="footer">
+
+       
+        
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/SocialMediaIcon (12).png" alt="facebook"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (10).png" alt="twitter"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (11).png" alt="instagram"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (18).png" alt="linkedin"></a>
+        </div>
+        <div class="footer__text">
+            <p>© 2023 EntertainEd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
