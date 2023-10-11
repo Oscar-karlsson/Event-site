@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/app/event.js"></script> 
+    <script src="/app/image-previews.js"></script> 
+    <script src="/app/image-upload.js"></script> 
+    <!-- <script src="/app/broken-image.js"></script>  -->
+    <script src="/app/edit-event.js"></script> 
+    <title>My Account</title>
+</head>
+<body>
+    <header class="main-header">
+       
+    
+        <nav class="main-header__navbar">
+            <div class="main-header__navbar-logo">
+               <a href="index.html"> <img src="/assets/logo.png" alt="logo-image"></a>
+            </div>
+            <div  class="main-header__navbar-list">
+            <ul class="main-header__navbar-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+        <a class="main-header__navbar-login" href="/pages/my-account.html" >
+            <img src="/assets/login.png" alt="Image Description">
+        </a>
+            </div>
+    
+        </nav>
+</header>
+    <main>
+        
+        <div class="dashboard">
+            <div class="dashboard-sidebar">
+                <ul>
+                    <li><a href="#my-account">My Account</a></li>
+                    <li><a href="#create-event">Create Event</a></li>
+                    <li><a href="#edit-event">Edit Event</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-content">
+                <section class="dashboard-section" id="my-account">
+                    <h1>My Account</h1>
+                    <form class="account-form">
+                        <div class="form-group__content">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" value="Sarah" >
+                            <!-- <button class="edit-button" data-field="first-name">Edit</button> -->
+                        </div>
+                        <div class="form-group__content">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" value="Johnson" >
+                            <!-- <button class="edit-button" data-field="last-name">Edit</button> -->
+                        </div>
+                        <div class="form-group__content">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="john.doe@example.com" disabled >
+                            <!-- <button class="edit-button" data-field="email">Edit</button> -->
+                        </div>
+                        <div class="account-buttons">
+                            <button class="change-password-button">Update Account</button>
+                            <button class="change-password-button">Change Password</button>
+                            <button class="logout-button">Logout</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="dashboard-section" id="create-event">
+                    <h1>Create Event</h1>
+                    <form class="shared-form">
+                        <div class="form-group__content">
+                            <label for="event-title">Event Title</label>
+                            <input type="text" id="event-title" name="event-title" required>
+                        </div>
+                        <div class="form-group__content">
+                            <label for="event-description">Event Description</label>
+                            <textarea id="event-description" name="event-description" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group__content">
+                            <label for="event-date">Event Date</label>
+                            <input type="date" id="event-date" name="event-date" required>
+                        </div>
+                        <div class="form-group__content">
+                            <label for="event-location">Event Location</label>
+                            <input type="text" id="event-location" name="event-location" required>
+                        </div>
+                        <div class="form-group__content">
+                            <label for="event-categories">Event Categories</label>
+                            <input type="text" id="event-categories" name="event-categories" required>
+                        </div>
+                        <h2>Upload Images</h2>
+                        <div class="form-group">
+                            <label for="file1" class="image-placeholder">
+                                <img src=""  id="image1-preview">
+                            </label>
+                            <input type="file" accept="image/*" id="file1" class="image-upload" data-preview="image1-preview">
+                            
+                            <label for="file2" class="image-placeholder">
+                                <img src=""  id="image2-preview">
+                            </label>
+                            <input type="file" accept="image/*" id="file2" class="image-upload" data-preview="image2-preview">
+                            
+                            <label for="file3" class="image-placeholder">
+                                <img src=""  id="image3-preview">
+                            </label>
+                            <input type="file" accept="image/*" id="file3" class="image-upload" data-preview="image3-preview">
+                            
+                            <label for="file4" class="image-placeholder">
+                                <img src=""  id="image4-preview">
+                            </label>
+                            <input type="file" accept="image/*" id="file4" class="image-upload" data-preview="image4-preview">
+                        </div>
+                    </form>
+                </section>
+                <section class="dashboard-section" id="edit-event">
+                    <h1>Edit Event</h1>
+                
+                    <!-- Event List -->
+                    <div class="event-list">
+                        <ul id="events">
+                            <li data-event-id="1">Event 1</li>
+                            <li data-event-id="2">Event 2</li>
+                            <!-- Add more events here -->
+                        </ul>
+                    </div>
+                    
+                    <form class="edit-event-form">
+                        <div class="form-group__content">
+                            <label for="event-title-edit">Event Title</label>
+                            <input type="text" id="event-title-edit" name="event-title-edit">
+                        </div>
+                        <div class="form-group__content">
+                            <label for="event-date-edit">Event Date</label>
+                            <input type="date" id="event-date-edit" name="event-date-edit">
+                        </div>
+                        <div class="form-group__content">
+                            <label for="event-location-edit">Event Location</label>
+                            <input type="text" id="event-location-edit" name="event-location-edit">
+                        </div>
+                        <div class="form-group__content">
+                            <label for="event-katt">Event Categories</label>
+                            <input type="text" id="event-katt" name="event-katt" required>
+                        </div>
+                        <!-- <div class="form-group__content">
+                            <label for="event-categories">Event Categories</label>
+                            <input type="text" id="event-categories" name="event-categories" required>
+                        </div> -->
+                        <div class="form-group__content">
+                            <label for="event-description-edit">Event Description</label>
+                            <textarea id="event-description-edit" name="event-description-edit"></textarea>
+                        </div>
+                        <button type="submit">Save Changes</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    
+    </main>
+    
+    <footer class="footer">
+
+       
+        
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/SocialMediaIcon (12).png" alt="facebook"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (10).png" alt="twitter"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (11).png" alt="instagram"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (18).png" alt="linkedin"></a>
+        </div>
+        <div class="footer__text">
+            <p>© 2023 EntertainEd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

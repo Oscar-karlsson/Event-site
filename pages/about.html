@@ -13,16 +13,22 @@
        
     
         <nav class="main-header__navbar">
-        <div class="main-header__navbar-logo">
-           <a href="index.html"> <img src="/assets/logo.png" alt="logo-image"></a>
-        </div>
-        <ul class="main-header__navbar-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    </nav>
+            <div class="main-header__navbar-logo">
+               <a href="index.html"> <img src="/assets/logo.png" alt="logo-image"></a>
+            </div>
+            <div  class="main-header__navbar-list">
+            <ul class="main-header__navbar-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+        <a class="main-header__navbar-login" href="/pages/my-account.html" >
+            <img src="/assets/login.png" alt="Image Description">
+        </a>
+            </div>
+    
+        </nav>
 </header>
     <main>
         
@@ -43,17 +49,26 @@
             <p>At EntertainEd, we specialize in designing and hosting a diverse range of events that cater to every taste and age group. From music festivals that transcend genres to comedy nights that tickle your funny bone, from immersive theater experiences to culinary adventures that tantalize your taste buds, we offer an array of entertainment options that promise something for everyone.</p>
         </section>
 
-        <section id="ceo">
-            <h2>Meet Our CEO</h2>
-            <div class="person">
+        <section class="ceo">
+        <h2>Meet Our CEO</h2>
+        <div class="ceo-content">
+
+            <div class="ceo-image">
                 <img src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80" alt="Sarah Johnson - CEO">
-                <h2>Sarah Johnson</h2>
-                <p>Founder & CEO</p>
-                <p>Sarah Johnson, the visionary founder and CEO of EntertainEd, brings over three decades of event management expertise to the company. Her passion for creating unforgettable experiences and dedication to excellence have made EntertainEd a leader in the industry. Under her leadership, EntertainEd has grown into a creative powerhouse, where every event is a masterpiece waiting to be unveiled. Join Sarah on this journey of crafting moments that matter and making memories that last a lifetime.</p>
             </div>
+            <div class="ceo-info">
+                <h3>Sarah Johnson</h3>
+                <h4>Founder & CEO</h4>
+                <p>Sarah Johnson, the visionary founder and CEO of EntertainEd, brings over three decades of event management expertise to the company. Her passion for creating unforgettable experiences and dedication to excellence have made EntertainEd a leader in the industry. Under her leadership, EntertainEd has grown into a creative powerhouse, where every event is a masterpiece waiting to be unveiled. Join Sarah on this journey of crafting moments that matter and making memories that last a lifetime.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:youremail@example.com" class="contact-button">Email</a>
+                    <a href="tel:+1234567890" class="contact-button">Phone</a>
+                </div>
+            </div>
+        </div>
         </section>
     
-        <div class="team-members">
+        <!-- <div class="team-members">
 
             <section id="team">
                 <h2>Meet Our Team</h2>
@@ -109,11 +124,68 @@
                     
                       </div>
                 </div>
-            </section>
+            </section> -->
         </div>
     
 
     </div>
+    <section class="meet-our-team">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+        <div class="team-members__person">
+          <img src="https://img.freepik.com/free-photo/headshot-charismatic-pleasant-friendly-european-woman-short-chestnut-haircut-smiling-positive-feeling-happy-upbeat-enjoying-lifes-casually-talking-friends-amused-cheerful-standing-white-background_176420-34680.jpg" alt="Team Member - Emily Carter">
+          <h3>Emily Carter</h3>
+          <h4>Customer Experience Specialist</h4>
+          <div class="team-members__person-details">
+            <p>Emily Carter is our customer experience expert. She is dedicated to ensuring that every guest has a memorable and enjoyable time at our events. Emily's warm and welcoming personality makes attendees feel like part of the EntertainEd family.</p>
+          </div>
+          <div class="contact-buttons">
+            <a href="mailto:youremail@example.com" class="contact-button">Email</a>
+            <a href="tel:+1234567890" class="contact-button">Phone</a>
+          </div>
+        </div>
+        
+        <div class="team-members__person">
+          <img src="https://img.freepik.com/free-photo/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray_176420-44508.jpg?w=1060&t=st=1696533265~exp=1696533865~hmac=fa02614aa206dc96a25da67fc0ea463ad3f60cb423a7fb398b19e98c5b4f97bd" alt="Team Member - Alex Parker">
+          <h3>Alex Parker</h3>
+          <h4>Creative Director</h4>
+          <div class="team-members__person-details">
+            <p>Alex Parker is our creative genius. With a background in theater production, he brings a unique blend of creativity and precision to every event. Alex's flair for the dramatic ensures that our immersive experiences are nothing short of spectacular.</p>
+          </div>
+          <div class="contact-buttons">
+            <a href="mailto:youremail@example.com" class="contact-button">Email</a>
+            <a href="tel:+1234567890" class="contact-button">Phone</a>
+          </div>
+        </div>
+        
+        <div class="team-members__person">
+          <img src="https://img.freepik.com/free-photo/portrait-caucasian-woman-smiling_53876-146505.jpg?w=900&t=st=1696532327~exp=1696532927~hmac=cec84aca1b64763d12d61416dbd9cf810c4c18954f9be841aab0acb881ebd04f" alt="Team Member - Megan Davis">
+          <h3>Megan Davis</h3>
+          <h4>Marketing Maestro</h4>
+          <div class="team-members__person-details">
+            <p>Megan Davis is the voice of EntertainEd. Her marketing prowess and keen eye for detail help us reach the right audience and make each event a grand success. Megan's passion for storytelling shines through in our event promotions.</p>
+          </div>
+          <div class="contact-buttons">
+            <a href="mailto:youremail@example.com" class="contact-button">Email</a>
+            <a href="tel:+1234567890" class="contact-button">Phone</a>
+          </div>
+        </div>
+        
+        <div class="team-members__person">
+          <img src="https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?w=1060&t=st=1696532574~exp=1696533174~hmac=22632a9940036708d3232423da8581e00ea514e2fd2a87d59efacd5442a5c121" alt="Team Member - Chris Rodriguez">
+          <h3>Chris Rodriguez</h3>
+          <h4>Logistics Luminary</h4>
+          <div class "team-members__person-details">
+            <p>Chris Rodriguez is the mastermind behind the scenes. His logistics expertise ensures that everything runs like clockwork at our events. Chris's dedication to perfection makes each event a seamless and enjoyable experience for our attendees.</p>
+          </div>
+          <div class="contact-buttons">
+            <a href="mailto:youremail@example.com" class="contact-button">Email</a>
+            <a href="tel:+1234567890" class="contact-button">Phone</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     
     </main>
     

@@ -1,0 +1,17 @@
+ function previewImage(input, previewElementId) {
+        const previewElement = document.getElementById(previewElementId);
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                previewElement.src = e.target.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    // Add event listeners for file input elements
+    document.getElementById('file1').addEventListener('change', function() {
+        previewImage(this, 'image1');
+    });
