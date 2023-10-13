@@ -501,7 +501,7 @@ input[type=file] {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 5px;
-  max-height: 75px; /* Set the maximum height to define the scrollable area */
+  max-height: 90px; /* Set the maximum height to define the scrollable area */
   overflow-y: scroll; /* Enable vertical scrolling */
 }
 .event-list ul li {
