@@ -1,22 +1,25 @@
 @import 'resets';
 @import 'fonts';
-@import 'event';
+@import 'events';
 @import 'about';
 @import 'contact';
 @import 'my-account';
+@import 'event-page';
 
 
 .main-header {
     position: relative;
-  
+
     .main-header__header-img {
       & img {
         width: 100%;
         height: 500px;
-        object-fit: cover;
+        // display: block;
+        // margin-left: auto;
+        // margin-right: auto;
       }
     }
-  
+
     .main-header__navbar {
       height: 68px;
       display: flex;
@@ -28,14 +31,16 @@
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #235ac7;
+      background-color: $background-color;
+      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+      // border-bottom: solid 0.5px #eae3e3;
 
       .main-header__navbar {
         display: flex;
         justify-content: space-between;
         gap: 20px;
       }
-  
+
       .main-header__navbar-list {
         display: flex;
         justify-content: right;
@@ -43,13 +48,13 @@
         gap: 40px;
         align-items: center;
         font-size: $nav-font-size;
-        
-  
+
+
         li {
           transition: color 0.3s, border-color 0.3s;
           position: relative;
           display: inline-block;
-  
+
           &::after {
             content: '';
             position: absolute;
@@ -61,23 +66,23 @@
             transform: translateX(-50%);
             transition: width 0.3s;
           }
-  
+
           &:hover {
             color: $primary-accent-color;
-  
+
             &::after {
               width: 100%;
             }
           }
         }
       }
-  
+
       .main-header__navbar-logo {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 0 0 100px;
-  
+
         & img {
           width: 60px;
           height: auto;
@@ -87,12 +92,23 @@
   }
 
 .main-header__navbar-login {
+ transition: 0.3s;
   img {
     width: 30px;
     height: auto;
   }
+
+  :hover {
+    transform: scale(1.1);
+  }
 }
- 
+
+
+.main-content__heading {
+  margin: 68px 0 50px 0;
+    text-align: center;
+    border-bottom: solid 0.5px #eae3e3;
+}
 
 
   .event-wrapper {
@@ -117,7 +133,7 @@
   // grid-gap: $event-card-spacing;
 
   .event-card {
-      background-color: #fff;
+      background-color: $background-color;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       padding: 0 0 20px 0;
       border-radius: 8px;
@@ -139,8 +155,7 @@
       .event-details {
         padding: 0 10px 0 10px;
           display: flex;
-          flex-direction: row; /* Layout date and info side by side */
-          align-items: flex-start; /* Align elements to the top */
+          align-items: flex-start;
 
           .event-date {
               display: flex;
@@ -175,7 +190,7 @@
                   margin-bottom: 10px;
                   align-content: center;
                   justify-content: center;
-                  
+
               }
 
               .event-location {
@@ -191,12 +206,12 @@
 
               }
 
-              
+
 
               .event-description.hidden {
                 display: none;
               }
-              
+
           }
       }
 
@@ -213,9 +228,9 @@
   flex-wrap: wrap;
   gap: 5px;
   z-index: 2;
-  
-  
-  
+
+
+
 
   .category-button {
     background-color: #007bff;
@@ -227,8 +242,8 @@
     cursor: pointer;
     transition: background-color 0.3s;
 
-    
-    
+
+
 
     &:hover {
       background-color: #0056b3;
@@ -245,6 +260,90 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.newsletter {
+  // background-color: $neutral-background-color;
+  // display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+
+  .newsletter-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      // background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+      }
+
+      p {
+          font-size: 1rem;
+          color: #555;
+          margin-bottom: 20px;
+      }
+
+      .subscribe-form {
+          width: 30%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          text-align: center;
+          margin: 0 auto;
+
+          @media (max-width: 768px) {
+            flex-direction: column;
+            width: 50%;
+          }
+
+          input[type="email"] {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              font-size: 1rem;
+              margin-bottom: 10px;
+              margin-bottom: 0;
+
+          }
+
+          button {
+              background-color: #007BFF;
+              color: #fff;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              font-size: 1rem;
+              cursor: pointer;
+              margin-bottom: 0;
+
+
+              &:hover {
+                  background-color: #0056b3;
+              }
+          }
+      }
   }
 }
 
@@ -273,4 +372,10 @@
   }
 
 
-  
+
+
+
+
+
+
+

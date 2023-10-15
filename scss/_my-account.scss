@@ -11,7 +11,7 @@
     width: 10%;
     min-width: 250px;
     padding: 20px 0 0 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     overflow-y: auto;
 
     ul {
@@ -37,7 +37,7 @@
 }
 
 .dashboard-content {
-    background-color: #fff;
+    background-color: $background-color;
     flex: 1;
     padding: 20px;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
@@ -153,6 +153,9 @@ input[type=file] {
   display: none;
 }
 
+textarea {
+    resize: none;
+  }
 
 
 .event-list {

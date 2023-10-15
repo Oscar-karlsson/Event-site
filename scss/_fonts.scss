@@ -5,13 +5,17 @@ $body-font: 'Open Sans', sans-serif;
 $nav-font: 'Lato', sans-serif;
 
 // Define color variables
-$primary-accent-color: rgb(20,115,169); // Use the correct variable name
-$secondary-accent-color: rgb(228,72,120);
-$background-color: #BAB1CF;
-$text-color: #333;
+$primary-accent-color: #235ac7; 
+$secondary-accent-color: #f4c2d3;
+$background-color: #fefbfc;
+$text-color: #1e050e;
 $link-color: #00adb5;
-$neutral-background-color: #201A19;
+$neutral-background-color: #f7f7f7;
 $neutral-text-color: #000000;
+
+
+
+
 
 
 // Define font sizes in rem units
@@ -28,14 +32,14 @@ body {
     font-size: $body-font-size;
     line-height: 1.5;
     color: $text-color;
-    background-color: $neutral-background-color;
+    background-color: $background-color;
 }
 
 h1 {
     font-family: $primary-heading-font;
     font-size: $primary-heading-size;
     font-weight: bold;
-    color: $primary-accent-color; // Corrected variable name
+    color: $primary-accent-color; 
 }
 
 h2, h3 {
