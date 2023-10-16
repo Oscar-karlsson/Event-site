@@ -13,8 +13,9 @@
 
     
    
+    @media (max-width: 768px) {
         grid-template-columns: 1fr;
-
+    }
 
         
             
@@ -24,7 +25,7 @@
 
 
     .event-site-image {
-        width: 100%; // Adjust width as needed
+        width: 100%; 
         height: auto;
         overflow: hidden;
         border-radius: 8px 0 0 8px;
