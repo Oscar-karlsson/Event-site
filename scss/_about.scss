@@ -1,12 +1,14 @@
 
 .main-content {
-    text-align: center;
-    align-items: center;
-    background-color: $neutral-background-color;
-    padding: 0px;
+    
+    background-color: $background-color;
+    width: 80%;
+    margin: 0 auto;
+
 
     h2 {
         margin-bottom: 20px;
+        text-align: center;
     }
     p {
         text-align: left;
@@ -15,9 +17,14 @@
 
 
 
+.main-content__about-company {
+    // padding: 20px;
+}
 
-
-
+#what-we-do, #mission, #story, #why-choose-us {
+    margin-bottom: 20px;
+    padding: 20px;
+}
 
 .ceo {
     background-color: $background-color;
@@ -27,6 +34,10 @@
     h2 {
         text-align: center;
         margin-bottom: 40px;
+    }
+
+    h3 {
+        color: $neutral-text-color;
     }
 
     .ceo-content {
@@ -59,7 +70,7 @@
 
             .contact-button {
                 padding: 10px 20px;
-                background-color: #007bff;
+                background-color: $primary-accent-color;
                 color: #fff;
                 text-decoration: none;
                 border: none;
@@ -110,8 +121,8 @@
 
 .meet-our-team {
     text-align: center;
-    margin: 0px 0 100px 0;
-    background-color: $neutral-background-color;
+    margin: 0px 0 20px 0;
+    background-color: $background-color;
     padding: 40px;
 
     h2 {

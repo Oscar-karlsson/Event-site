@@ -5,14 +5,25 @@ $body-font: 'Open Sans', sans-serif;
 $nav-font: 'Lato', sans-serif;
 
 // Define color variables
-$primary-accent-color: #235ac7; 
-$secondary-accent-color: #f4c2d3;
-$background-color: #fefbfc;
-$text-color: #1e050e;
-$link-color: #00adb5;
-$neutral-background-color: #f7f7f7;
-$neutral-text-color: #000000;
+// $primary-accent-color: #235ac7; 
+// $secondary-accent-color: #f4c2d3;
+// $background-color: #fefbfc;
+// $text-color: #1e050e;
+// $link-color: #00adb5;
+// $neutral-background-color: #f7f7f7;
+// $neutral-text-color: #000000;
 
+$primary-accent-color: #007BFF; 
+$secondary-accent-color: #FF8A9A; 
+$background-color: #EFF5F7; 
+$text-color: #1e050e; 
+$link-color: #FFA300; 
+$neutral-background-color: #f7f7f7; 
+$neutral-text-color: #000000; 
+$event-location-color: #555; 
+$button-text-color: #fff;
+$border-button-color: #eae3e3;
+$primary-accent-color-hover: darken($primary-accent-color, 10%);
 
 
 

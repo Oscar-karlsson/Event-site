@@ -20,6 +20,39 @@
       }
     }
 
+    .main-header__text-button {
+      position: absolute;
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center the content */
+      text-align: center;
+      color: #fff;
+      z-index: 1; /* Place the text and button above the image */
+
+      h1 {
+          margin: 0;
+          color: $secondary-accent-color;
+      }
+
+      .button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+          margin-top: 10px;
+
+          &:hover {
+              background-color: #0056b3;
+          }
+      }
+  }
+}
+
+   
+
     .main-header__navbar {
       height: 68px;
       display: flex;
@@ -32,7 +65,7 @@
       left: 0;
       width: 100%;
       background-color: $background-color;
-      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+      // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
       // border-bottom: solid 0.5px #eae3e3;
 
       .main-header__navbar {
@@ -48,6 +81,7 @@
         gap: 40px;
         align-items: center;
         font-size: $nav-font-size;
+        
 
 
         li {
@@ -89,7 +123,6 @@
         }
       }
     }
-  }
 
 .main-header__navbar-login {
  transition: 0.3s;
@@ -104,10 +137,154 @@
 }
 
 
+/* Hamburger-menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 16px;
+  z-index: 3;
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: $neutral-text-color;
+    margin: 6px 0;
+    transition: transform 0.6s; // Add a transition for the bars
+  }
+
+  &.active {
+    .bar:first-child {
+      transform: translateY(8px) rotate(45deg); // Rotate and move the first bar for the "X" effect
+    }
+    .bar:nth-child(2) {
+      opacity: 0; // Hide the middle bar
+    }
+    .bar:last-child {
+      transform: translateY(-8px) rotate(-45deg); // Rotate and move the last bar for the "X" effect
+    }
+  }
+}
+
+/* Styles for the mobile navigation menu */
+.mobile-nav {
+  list-style: none;
+  font-size: 2rem;
+  padding: 0;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $neutral-background-color;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav li {
+  margin: 1rem; // Adjust as needed to control the spacing between list items
+  text-align: center;
+  animation: dropDown 0.4s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes dropDown {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.mobile-nav li {
+  margin: 1rem; // Adjust as needed to control the spacing between list items
+  text-align: center;
+}
+
+  /* Add fade-in animation */
+  .mobile-nav li {
+    animation: fadeIn 0.3s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); // Start from a higher position
+    }
+    to {
+      opacity: 1;
+      transform: translateY(500%);
+    }
+  }
+
+  @keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+
+/* Media query for screens below a certain width (adjust the width as needed) */
+@media screen and (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .main-header__navbar-list {
+    display: none !important; /* Hide the regular navigation list */
+  }
+
+  .main-header__header-img {
+      display: none; /* Hide the header image */
+  }
+
+  .mobile-nav {
+      display: block; /* Display the mobile navigation menu */
+  }
+
+  .event-heading {
+    margin-top: 68px;
+  }
+
+  .main-header__navbar-logo img {
+    margin-left: -80px;
+  }
+}
+
+
 .main-content__heading {
-  margin: 68px 0 50px 0;
+  // margin: 68px 0 50px 0;
     text-align: center;
-    border-bottom: solid 0.5px #eae3e3;
+    border-bottom: solid 1px $border-button-color;
+    color: $secondary-accent-color;
+    width: 100%;
+    margin: 68px auto;
 }
 
 
@@ -121,8 +298,9 @@
 .event-heading {
     text-align: center;
     font-size: 24px;
-    // color: $primary-color;
+    color: $secondary-accent-color;
     margin-bottom: 40px;
+    border-bottom: solid 1px $border-button-color;
 }
 
 // Style the event grid
@@ -130,7 +308,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  // grid-gap: $event-card-spacing;
 
   .event-card {
       background-color: $background-color;
@@ -145,11 +322,16 @@
       flex-direction: column; /* Adjust the flex direction to stack elements vertically */
       align-items: center; /* Center elements horizontally */
       align-self: stretch;
+      margin: 0 auto;
 
       img {
           max-width: 100%;
           height: 200px;
           margin-bottom: 10px;
+      }
+      
+      p {
+        text-align: left;
       }
 
       .event-details {
@@ -168,13 +350,14 @@
                   font-weight: bold;
                   margin: 0 5px 0 0;
                   padding: 0;
-                  color: #235ac7;
+                  color: $primary-accent-color;
               }
 
               .month {
                   font-size: 18px;
                   margin: 0;
                   padding: 0;
+                  color: $neutral-text-color;
               }
           }
 
@@ -195,7 +378,7 @@
 
               .event-location {
                   font-size: 14px;
-                  color: #555;
+                  color: $event-location-color;
                   margin: 5px 0;
               }
 
@@ -228,17 +411,18 @@
   flex-wrap: wrap;
   gap: 5px;
   z-index: 2;
+  margin-bottom: 10px;
 
 
 
 
   .category-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: $primary-accent-color;
+    color: $button-text-color;
     border: none;
     border-radius: 4px;
-    padding: 5px 10px;
-    font-size: 11px;
+    padding: 5px 5px;
+    font-size: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 
@@ -348,6 +532,11 @@
 }
 
 
+.main-content__heading {
+  
+}
+
+
 .footer {
   bottom: 0;
   left: 0;
@@ -370,12 +559,3 @@
   .footer__text {
     text-align: center;
   }
-
-
-
-
-
-
-
-
-
