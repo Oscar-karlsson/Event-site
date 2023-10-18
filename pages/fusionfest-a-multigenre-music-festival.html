@@ -12,62 +12,82 @@
 </head>
 <body>
     <header class="main-header">
+       
+    
         <nav class="main-header__navbar">
-        <div class="main-header__navbar-logo">
-           <a href="index.html"> <img src="/assets/EE Logo.png" alt="logo-image"></a>
-        </div>
-        <ul class="main-header__navbar-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/pages/events.html">Events</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-    </ul>
-    </nav>
-
-    <div class="mobile-menu">
-        <div class="hamburger" id="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="mobile-nav" id="mobile-nav">
+            <div class="main-header__navbar-logo">
+               <a href="index.html"> <img src="/assets/EE Logo.png" alt="logo-image"></a>
+            </div>
+            <div  class="main-header__navbar-list">
+            <ul class="main-header__navbar-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="/pages/events.html">Events</a></li>
             <li><a href="/pages/about.html">About</a></li>
             <li><a href="/pages/contact.html">Contact</a></li>
-            <li><a href="/pages/my-account.html">My Account</a></li>
         </ul>
-    </div>
+        <a class="main-header__navbar-login" href="/pages/my-account.html" >
+            <img src="/assets/login.png" alt="Image Description">
+        </a>
+            </div>
+    
+        </nav>
+
+        <div class="mobile-menu">
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <ul class="mobile-nav" id="mobile-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="/pages/events.html">Events</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+              <li><a href="/pages/my-account.html">My Account</a></li>
+          </ul>
+      </div>
 </header>
     <main>
-        
+        <h1 class="main-content__heading">FusionFest: A Multigenre Music Festival</h1>
         <section class="event-page">
-            <div class="event-page__description">
-                <div class="event-page__main-image">
-                    <h1>FusionFest: A Multigenre Music Festival</h1>
-                    <img src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 1">
-                </div>
-                
-                <!-- <p><b>Categories:</b> Music Festival, Outdoor Event, Multigenre Music</p> -->
-                <div class="category-buttons">
-                    <button class="category-button" data-category-url="#">Music Festival</button>
-                    <button class="category-button" data-category-url="#">Outdoor Event</button>
-                    <button class="category-button" data-category-url="#">Multigenre Music</button>
-                    </div>
-                <p><b>Description:</b> FusionFest is an all-day music festival that celebrates the diversity of musical genres. It features multiple stages, showcasing artists from rock, pop, hip-hop, electronic, and more. Attendees can enjoy a mix of live performances, interactive art installations, and food vendors.</p>
+            <div class="event-page__main">
+              <div class="event-page__main-image">
+                <img src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 1">
+              </div>
+          
+              <div class="event-page__details">
+                <!-- <h2>Event Details:</h2> -->
+                <!-- <h4>Description:</h4> -->
+                <p>FusionFest is a day-long musical extravaganza that brings together a wide array of musical genres <br>Multiple stages showcase a diverse lineup, from rock to pop, hip-hop, electronic, and beyond.<br> It's a fusion of musical styles where both emerging and established artists light up the stages with electrifying performances.<br> Beyond the music, immersive art installations ignite your imagination, and a variety of food vendors tantalize your taste buds.<br> Join us for a day of diverse tunes, art, and culinary delights at FusionFest.
+
+                At FusionFest, we celebrate the universal language of music, where harmonies converge and melodies resonate.<br> It's an immersive experience that transcends boundaries and unites music enthusiasts from all backgrounds.<br> Come be part of this unique musical journey that promises unforgettable moments and artistic exploration in a vibrant, one-of-a-kind atmosphere.</p>
+                <h4>Event Schedule:</h4>
+                <p> 12:00 PM - Gates Open<br>
+                    1:00 PM - Opening Act: Local Indie Bands <br>
+                    3:00 PM - Main Stage: Headliner Rock Band<br>
+                    5:30 PM - Electronic Music Showcase<br>
+                    8:00 PM - Hip-Hop Extravaganza<br>
+                    10:00 PM - Fireworks Finale</p><br>
                 <p><b>Location:</b> Central Park Amphitheater</p>
-                <p><b>Date:</b> Saturday, September 16th, 2023</p>
+                <p><b>Date:</b> Saturday, October 22th, 2023</p>
+                <div class="category-buttons">
+                    <button class="category-button" data-category-url="#">Arts & Entertainment</button>
+                    <button class="category-button" data-category-url="#">Outdoor & Adventure</button>
+                    <button class="category-button" data-category-url="#">Family & Community</button>
+                  </div>
+              </div>
             </div>
+          
             <div class="event-page__images">
-                <h2>Event Images:</h2>
-                <div class="event-page__image-container">
-                    <img src="https://images.unsplash.com/photo-1523973740062-18e700e8da35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80" alt="Event Image 1">
-                    <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60" alt="Event Image 2">
-                    <img src="https://images.unsplash.com/photo-1533137098665-47ca60257cec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 3">
-                    <img src="https://images.unsplash.com/photo-1505842465776-3b4953ca4f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 4">
-                </div>
+              <h2>Event Images:</h2>
+              <div class="event-page__image-container">
+                <img src="https://images.unsplash.com/photo-1523973740062-18e700e8da35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80" alt="Event Image 1">
+                <img src="https://images.unsplash.com/photo-1558625332-9a35ee767f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Event Image 2">
+                <img src="https://images.unsplash.com/photo-1533137098665-47ca60257cec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event Image 3">
+                <img src="https://images.unsplash.com/photo-1505842465776-3b4953ca4f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=2070&q=80" alt="Event Image 4">
+              </div>
             </div>
-        </section>
+          </section>
         <div class="event-page__image-modal">
             <span class="close">&times;</span>
             <img class="event-page__image-modal-content" id="modal-image">

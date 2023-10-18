@@ -14,20 +14,17 @@
       & img {
         width: 100%;
         height: 500px;
-        // display: block;
-        // margin-left: auto;
-        // margin-right: auto;
       }
     }
 
     .main-header__text-button {
       position: absolute;
-      top: 50%; /* Center vertically */
-      left: 50%; /* Center horizontally */
-      transform: translate(-50%, -50%); /* Center the content */
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
       text-align: center;
-      color: #fff;
-      z-index: 1; /* Place the text and button above the image */
+      color: $button-text-color;
+      z-index: 1; 
 
       h1 {
           margin: 0;
@@ -37,7 +34,7 @@
       .button {
           display: inline-block;
           padding: 10px 20px;
-          background-color: #007bff;
+          background-color: $primary-accent-color;
           color: #fff;
           text-decoration: none;
           border-radius: 4px;
@@ -45,7 +42,7 @@
           margin-top: 10px;
 
           &:hover {
-              background-color: #0056b3;
+              background-color: $primary-accent-color-hover
           }
       }
   }
@@ -66,7 +63,7 @@
       width: 100%;
       background-color: $background-color;
       // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
-      // border-bottom: solid 0.5px #eae3e3;
+      border-bottom: solid 1px $border-buttom-color;
 
       .main-header__navbar {
         display: flex;
@@ -143,15 +140,15 @@
   cursor: pointer;
   position: fixed;
   top: 20px;
-  right: 16px;
-  z-index: 3;
+  right: 12px;
+  z-index: 5;
 
   .bar {
     width: 30px;
     height: 3px;
     background-color: $neutral-text-color;
     margin: 6px 0;
-    transition: transform 0.6s; // Add a transition for the bars
+    transition: transform 0.6s; 
   }
 
   &.active {
@@ -189,7 +186,7 @@
 .mobile-nav li {
   margin: 1rem; // Adjust as needed to control the spacing between list items
   text-align: center;
-  animation: dropDown 0.4s ease-in forwards;
+  animation: dropDown 0.6s ease-in forwards;
   opacity: 0;
 }
 
@@ -277,14 +274,51 @@
   }
 }
 
+.countdown-container {
+  border-bottom: solid 1px $border-buttom-color;
+  text-align: center;
+  margin: 20px auto;
+
+  @media (max-width: 768px) {
+    margin: 100px auto auto auto;
+  }
+}
+
+.countdown-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: $secondary-accent-color;
+  margin: 0;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.countdown-item {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: $primary-accent-color;
+  margin: 5px;
+}
+
+.countdown-label {
+  font-size: 14px;
+  color: $event-location-color;
+  margin: 0 10px;
+}
+
 
 .main-content__heading {
-  // margin: 68px 0 50px 0;
     text-align: center;
-    border-bottom: solid 1px $border-button-color;
+    border-bottom: solid 1px $border-buttom-color;
     color: $secondary-accent-color;
     width: 100%;
-    margin: 68px auto;
+    margin: 100px auto 20px auto;
 }
 
 
@@ -299,8 +333,9 @@
     text-align: center;
     font-size: 24px;
     color: $secondary-accent-color;
-    margin-bottom: 40px;
-    border-bottom: solid 1px $border-button-color;
+    // margin-bottom: 40px;
+    margin: 0 auto 40px auto;
+    border-bottom: solid 1px $border-buttom-color;
 }
 
 // Style the event grid
@@ -319,8 +354,8 @@
       max-width: 300px;
       overflow: hidden;
       display: flex;
-      flex-direction: column; /* Adjust the flex direction to stack elements vertically */
-      align-items: center; /* Center elements horizontally */
+      flex-direction: column; 
+      align-items: center; 
       align-self: stretch;
       margin: 0 auto;
 
@@ -341,9 +376,9 @@
 
           .event-date {
               display: flex;
-              flex-direction: column; /* Stack date elements vertically */
-              align-items: center; /* Center date horizontally */
-              margin-right: 10px; /* Add some spacing between date and info */
+              flex-direction: column; 
+              align-items: center; 
+              margin-right: 10px; 
 
               .day {
                   font-size: 24px;
@@ -362,7 +397,7 @@
           }
 
           .event-info {
-              flex-grow: 1; /* Allow info to grow and take remaining space */
+              flex-grow: 1; 
 
               .event-title {
                   font-size: 1.2rem;
@@ -386,6 +421,7 @@
                   font-size: 14px;
                   margin-top: 10px;
                   text-align: left;
+                  color: $text-color;
 
               }
 
@@ -430,7 +466,7 @@
 
 
     &:hover {
-      background-color: #0056b3;
+      background-color:$primary-accent-color-hover;
     }
   }
 }
@@ -439,7 +475,7 @@
 .event-show-more {
   text-align: left;
   font-size: 14px;
-  color: #007bff;
+  color: $primary-accent-color;
   cursor: pointer;
 
   &:hover {
@@ -449,17 +485,7 @@
 
 
 
-
-
-
-
-
-
-
-
 .newsletter {
-  // background-color: $neutral-background-color;
-  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -472,10 +498,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-      // background-color: #fff;
       padding: 20px;
       border-radius: 8px;
-      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 
       h2 {
           font-size: 1.5rem;
@@ -532,17 +557,18 @@
 }
 
 
-.main-content__heading {
-  
-}
 
 
 .footer {
+  margin-top: auto;
+  margin-bottom: 20px;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
   height: 68px;
+  border-top: solid 1px $border-buttom-color;
+  padding: 20px;
 }
 
 .footer__socials {

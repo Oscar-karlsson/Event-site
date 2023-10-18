@@ -8,6 +8,7 @@
     <script src="/app/show-more.js"></script> 
     <script src="/app/categoryButtons.js"></script> 
     <script src="/app/hamburger.js"></script> 
+    <script src="/app/countdown.js"></script> 
     <title>EntertainEd</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <img src="/assets/v02-waves-05.jpg" alt="header-img">
             <div class="main-header__text-button">
                 <h1>Explore a World of Excitement! Discover Upcoming Events and Get Ready to Dive into Unforgettable Experiences.</h1>
-                <a href="/event/index" class="button">Show All Events</a>
+                <a href="/pages/events.html" class="button">Show All Events</a>
             </div>
         </div>
 
@@ -59,6 +60,27 @@
 </header>
     <main>
         
+        <div class="countdown-container">
+            <h2 class="countdown-title">Countdown to FusionFest</h2>
+            <div class="countdown">
+              <div class="countdown-item">
+                <span class="countdown-number" id="days">00</span>
+                <span class="countdown-label">Days</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">Minutes</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">Seconds</span>
+              </div>
+            </div>
+          </div>
 
             <div class="event-wrapper">
                 <h2 class="event-heading">Upcoming Events:</h2>
@@ -68,7 +90,7 @@
                             <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Event 1">
                             <div class="event-details">
                                 <div class="event-date">
-                                    <div class="day">23</div>
+                                    <div class="day">22</div>
                                     <div class="month">OCT</div>
                                 </div>
                                 <div class="event-info">
@@ -169,7 +191,7 @@
                                     <div class="category-buttons">
                                         <button class="category-button" data-category-url="#">Arts & Entertainment</button>
                                         <button class="category-button" data-category-url="#">Community & Charity</button>
-                                        <button class="category-button" data-category-url="#">Immersive Theater</button> 
+                                        <button class="category-button" data-category-url="#">Family & Community</button> 
                                     </div>
                                     <p class="event-show-more">Show More</p>
                                     <div class="event-description hidden">The Mystery Mansion Masquerade is an immersive theatrical experience where attendees don masks and play characters in a mysterious storyline. It combines elements of a masquerade ball, murder mystery, and escape room adventure. The event leverages technology for an interactive experience and supports charitable causes.</div>

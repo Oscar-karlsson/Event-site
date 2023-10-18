@@ -107,7 +107,7 @@
                             <textarea id="event-description" name="event-description" rows="4" required></textarea>
                         </div>
                         <div class="form-group__content">
-                            <label for="event-agenda">Event Agenda</label>
+                            <label for="event-agenda">Event Schedule</label>
                             <textarea id="event-agenda" name="event-agenda" rows="4" required></textarea>
                         </div>
                         <h2>Choose up to 3 categories:</h2>
@@ -168,14 +168,12 @@
                     <!-- Event List -->
                     <div class="event-list">
                         <ul id="events">
-                            <li data-event-id="1">Event 1</li>
-                            <li data-event-id="2">Event 2</li>
-                            <li data-event-id="2">Event 3</li>
-                            <li data-event-id="2">Event 4</li>
-                            <li data-event-id="2">Event 5</li>
-                            <li data-event-id="2">Event 6</li>
-                            <li data-event-id="2">Event 7</li>
-                            <!-- Add more events here -->
+                            <li data-event-id="1">FusionFest: A Multigenre Music Festival</li>
+                            <li data-event-id="2">CineMagic: Outdoor Movie Extravaganza</li>
+                            <li data-event-id="2">Foodie Fiesta: A Global Culinary Adventure</li>
+                            <li data-event-id="2">Artisan Alley: Creative Craft Fair</li>
+                            <li data-event-id="2">Mystery Mansion Masquerade</li>
+                            <li data-event-id="2">Animal Amusement Expo</li>
                         </ul>
                     </div>
                     
@@ -191,7 +189,18 @@
                         <div class="form-group__content">
                             <label for="event-location-edit">Event Location</label>
                             <input type="text" id="event-location-edit" name="event-location-edit">
-                        </div><h2>Choose up to 3 categories:</h2>
+                        </div>
+                                           
+                           
+                        <div class="form-group__content">
+                            <label for="event-description-edit">Event Description</label>
+                            <textarea id="event-description-edit" name="event-description-edit" rows="4" cols="40"></textarea>
+                        </div>
+                        <div class="form-group__content">
+                <label for="event-agenda-edit">Event Schedule</label>
+                <textarea id="event-agenda-edit" name="event-agenda-edit" rows="4" cols="40"></textarea>
+                        </div>
+                        <h2>Choose up to 3 categories:</h2>
                         <div class="category-list">
                             <div class="category-item">
                               <input type="checkbox" id="edit_category1">
@@ -218,24 +227,31 @@
                                 <label for="category6">Community & Charity</label>
                               </div>
                            
-                            <!-- Add more category items as needed -->
-                          </div>                       
-                           <div class="form-group__content">
-                            <label for="event-katt">Event Categories</label>
-                            <input type="text" id="event-katt" name="event-katt" required>
-                        </div>
-                        <!-- <div class="form-group__content">
-                            <label for="event-categories">Event Categories</label>
-                            <input type="text" id="event-categories" name="event-categories" required>
-                        </div> -->
-                        <div class="form-group__content">
-                            <label for="event-description-edit">Event Description</label>
-                            <textarea id="event-description-edit" name="event-description-edit" rows="3" cols="40"></textarea>
-                        </div>
-                        <div class="form-group__content">
-                <label for="event-agenda-edit">Event Agenda</label>
-                <textarea id="event-agenda-edit" name="event-agenda-edit" rows="3" cols="40"></textarea>
-                        </div>
+                          </div>    
+
+                          <h2>Upload Images</h2>
+                          <div class="form-group">
+                              <label for="file1" class="image-placeholder">
+                                  <img src="" id="image1-preview">
+                              </label>
+                              <input type="file" accept="image/*" id="file1" class="image-upload" data-preview="image1-preview">
+                  
+                              <label for="file2" class="image-placeholder">
+                                  <img src="" id="image2-preview">
+                              </label>
+                              <input type="file" accept="image/*" id="file2" class="image-upload" data-preview="image2-preview">
+                  
+                              <label for="file3" class="image-placeholder">
+                                  <img src="" id="image3-preview">
+                              </label>
+                              <input type="file" accept="image/*" id="file3" class="image-upload" data-preview="image3-preview">
+                  
+                              <label for="file4" class="image-placeholder">
+                                  <img src="" id="image4-preview">
+                              </label>
+                              <input type="file" accept="image/*" id="file4" class="image-upload" data-preview="image4-preview">
+                          </div>
+
                         <button type="submit">Save Changes</button>
                     </form>
                 </section>
