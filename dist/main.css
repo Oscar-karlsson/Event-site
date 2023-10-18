@@ -158,7 +158,7 @@ a:hover {
   margin: 5px 0;
 }
 .event-site-details .event-site-info .event-site-category-buttons {
-  margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0ss;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
