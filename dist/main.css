@@ -298,7 +298,7 @@ a:hover {
 .team-members {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 20px;
+  gap: 30px;
   justify-items: center;
   justify-content: space-evenly;
 }
@@ -349,6 +349,7 @@ a:hover {
 .contact-form {
   max-width: 400px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 .contact-form h2 {
   font-size: 24px;
@@ -394,7 +395,7 @@ a:hover {
   display: flex;
   width: 100%;
   height: 100vh;
-  margin: 68px 0 50px 0;
+  margin: 68px 0 0px 0;
 }
 
 .dashboard-sidebar {
@@ -403,7 +404,6 @@ a:hover {
   width: 10%;
   min-width: 250px;
   padding: 20px 0 0 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   overflow-y: auto;
 }
 .dashboard-sidebar ul {
@@ -451,7 +451,6 @@ a:hover {
   background-color: #EFF5F7;
   flex: 1;
   padding: 20px;
-  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
   overflow-y: auto;
 }
 .dashboard-content .dashboard-section {
@@ -662,7 +661,7 @@ textarea {
 .event-page .event-page__main-image {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  max-width: 60%;
   margin-right: 20px;
 }
 .event-page .event-page__main-image img {
@@ -671,14 +670,24 @@ textarea {
   border-radius: 5px;
 }
 .event-page .event-page__details {
+  flex: 1;
   font-size: 16px;
   color: #1e050e;
   margin: 0;
+  max-width: 60%;
 }
 .event-page h2 {
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 0 5px 0;
+}
+@media screen and (max-width: 768px) {
+  .event-page h2 {
+    text-align: center;
+  }
+}
+.event-page h4 {
+  margin-bottom: 0;
 }
 .event-page .event-page__image-container {
   display: flex;
@@ -719,7 +728,12 @@ textarea {
   max-height: 80%;
   margin: auto;
   display: block;
-  margin-top: 5%;
+  margin-top: 10%;
+}
+@media screen and (max-width: 768px) {
+  .event-page__image-modal-content {
+    margin-top: 50%;
+  }
 }
 
 .event-page__image-modal .close {
@@ -730,6 +744,12 @@ textarea {
   font-weight: bold;
   color: white;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .event-page__image-modal .close {
+    top: 23%;
+    right: 5%;
+  }
 }
 
 .main-header {
@@ -772,17 +792,16 @@ textarea {
   margin: 0;
   color: #FF8A9A;
 }
-.main-header .main-header__text-button .button {
+.main-header .main-header__text-button .main-header__text-button__btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #007BFF;
   color: #fff;
-  text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s;
   margin-top: 10px;
 }
-.main-header .main-header__text-button .button:hover {
+.main-header .main-header__text-button .main-header__text-button__btn:hover {
   background-color: #0062cc;
 }
 
@@ -981,42 +1000,38 @@ textarea {
   }
 }
 .countdown-container {
-  border-bottom: solid 1px #eae3e3;
   text-align: center;
-  margin: 20px auto;
-}
-@media (max-width: 768px) {
-  .countdown-container {
-    margin: 100px auto auto auto;
-  }
 }
 
 .countdown-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #FF8A9A;
-  margin: 0;
+  display: block;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.countdown .countdown-item {
+  text-align: center;
+  margin: 0 20px;
   margin-top: 10px;
 }
-
-.countdown-item {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #007BFF;
-  margin: 5px;
+.countdown .countdown-item:last-child {
+  margin-right: 0;
 }
-
-.countdown-label {
-  font-size: 14px;
-  color: #555;
-  margin: 0 10px;
+.countdown .countdown-item .countdown-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #007BFF; /* Replace with your desired color */
+  display: block;
+}
+.countdown .countdown-item .countdown-label {
+  font-size: 18px;
+  color: #1e050e; /* Replace with your desired color */
 }
 
 .main-content__heading {

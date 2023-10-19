@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/app/image-modal.js"></script> 
+    <script src="/app/show-more.js"></script> 
+    <script src="/app/hamburger.js"></script> 
+    <title>CineMagic: Outdoor Movie Extravaganza</title>
+</head>
+<body>
+    <header class="main-header">
+       
+    
+        <nav class="main-header__navbar">
+            <div class="main-header__navbar-logo">
+               <a href="/pages/index.html"> <img src="/assets/EE Logo.png" alt="logo-image"></a>
+            </div>
+            <div  class="main-header__navbar-list">
+            <ul class="main-header__navbar-list">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/events.html">Events</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+        <a class="main-header__navbar-login" href="/pages/my-account.html" >
+            <img src="/assets/login.png" alt="login-icon">
+        </a>
+            </div>
+    
+        </nav>
+
+        <div class="mobile-menu">
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <ul class="mobile-nav" id="mobile-nav">
+              <li><a href="/pages/index.html">Home</a></li>
+              <li><a href="/pages/events.html">Events</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+              <li><a href="/pages/my-account.html">My Account</a></li>
+          </ul>
+      </div>
+</header>
+    <main>
+        <h1 class="main-content__heading">CineMagic: Outdoor Movie Extravaganza</h1>
+        <section class="event-page">
+            <div class="event-page__main">
+              <div class="event-page__main-image">
+                <img src="https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==&auto=format&fit=crop&w=2109&q=80" alt="CineMagic main-mage">
+              </div>
+          
+              <div class="event-page__details">
+                <h2>Event Details:</h2>
+                <p>Get ready for a magical evening under the stars at CineMagic: Outdoor Movie Extravaganza. Nestled in the scenic beauty of Riverside Park, this event promises an enchanting night of cinematic wonder. As the sun sets and the stars emerge, our open-air movie experience begins, turning the park into a realm of cinematic dreams. Spread your blankets, bring your picnic baskets, and settle in for an unforgettable night of film and camaraderie. With state-of-the-art audio and visual equipment, you'll be immersed in the world of cinema like never before.<br><br>
+
+                    CineMagic isn't just about movies; it's an experience that transcends the screen. Enjoy pre-show entertainment, from live music to interactive games, that sets the stage for the main event. Our diverse film selection caters to all tastes, offering classics, family favorites, and contemporary blockbusters. Plus, our on-site concessions ensure that your culinary cravings are satisfied. Whether you're a film enthusiast, a family looking for a night of fun, or a couple seeking a romantic evening, CineMagic welcomes you to a world where movies come to life outdoors. Join us for an unforgettable night of cinematic enchantment, and let the magic of the movies sweep you away.</p>
+                <h4>Event Schedule:</h4>
+                <p> 7:00 PM - Picnic and Activities Begin<br>
+                    8:30 PM - Movie Screening Starts <br>
+                    10:30 PM - Movie Ends, Event Concludes<br>
+                <p><b>Location:</b> Rosewood Park</p>
+                <p><b>Date:</b> Wedensday, October 25th, 2023</p>
+                <div class="category-buttons">
+                    <a href="arts_and_entertainment.html" class="category-button">Arts & Entertainment</a>
+                    <a href="family_and_community.html" class="category-button">Family & Community</a>
+                    <a href="outdoor_and_adventure.html" class="category-button">Outdoor & Adventure</a>
+
+                  </div>
+              </div>
+            </div>
+          
+            <div class="event-page__images">
+              <h2>Event Images:</h2>
+              <div class="event-page__image-container">
+                <img src="https://media.phillyvoice.com/media/images/Movies_Night_at_Clark_Park_August2.2e16d0ba.fill-735x490.jpg" alt="CineMagic Image 1">
+                <img src="https://www.inquirer.com/resizer/S2Fp6SppmrNbek07ujilzIvqicM=/760x507/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/pmn/O3YFVSBKCFGKFIYIYV6NKNR3CA.jpg" alt="CineMagic Image 2">
+                <img src="https://media.phillyvoice.com/media/images/060523_clark_park_movies.05a42cf0.fill-735x490.jpg" alt="CineMagic Image 3">
+                <img src="https://media.timeout.com/images/105797403/750/422/image.jpg" alt="CineMagic Image 4">
+              </div>
+            </div>
+          </section>
+        <div class="event-page__image-modal">
+            <span class="close">&times;</span>
+            <img class="event-page__image-modal-content" id="modal-image">
+        </div>
+
+            
+    </main>
+    
+    <footer class="footer">
+
+       
+        
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/SocialMediaIcon (12).png" alt="facebook"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (10).png" alt="twitter"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (11).png" alt="instagram"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (18).png" alt="linkedin"></a>
+        </div>
+        <div class="footer__text">
+            <p>© 2023 EntertainEd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

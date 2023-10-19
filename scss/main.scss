@@ -51,12 +51,11 @@
       color: $secondary-accent-color;
     }
 
-    .button {
+    .main-header__text-button__btn {
       display: inline-block;
       padding: 10px 20px;
       background-color: $primary-accent-color;
-      color: #fff;
-      text-decoration: none;
+      color: $button-text-color;
       border-radius: 4px;
       transition: background-color 0.3s;
       margin-top: 10px;
@@ -288,41 +287,42 @@
 }
 
 .countdown-container {
-  border-bottom: solid 1px $border-buttom-color;
   text-align: center;
-  margin: 20px auto;
-
-  @media (max-width: 768px) {
-    margin: 100px auto auto auto;
-  }
 }
 
 .countdown-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: $secondary-accent-color;
-  margin: 0;
+  display: block;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-}
+  flex-wrap: wrap;
 
-.countdown-item {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: $primary-accent-color;
-  margin: 5px;
-}
+  .countdown-item {
+    text-align: center;
+    margin: 0 20px;
+    margin-top: 10px;
 
-.countdown-label {
-  font-size: 14px;
-  color: $event-location-color;
-  margin: 0 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .countdown-number {
+      font-size: 36px;
+      font-weight: bold;
+      color: $primary-accent-color; /* Replace with your desired color */
+      display: block;
+    }
+
+    .countdown-label {
+      font-size: 18px;
+      color: $text-color; /* Replace with your desired color */
+    }
+  }
 }
 
 .main-content__heading {

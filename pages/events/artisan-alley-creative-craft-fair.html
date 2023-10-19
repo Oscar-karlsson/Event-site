@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/app/image-modal.js"></script> 
+    <script src="/app/show-more.js"></script> 
+    <script src="/app/hamburger.js"></script> 
+    <title>Artisan Alley: Creative Craft Fair</title>
+</head>
+<body>
+    <header class="main-header">
+       
+    
+        <nav class="main-header__navbar">
+            <div class="main-header__navbar-logo">
+               <a href="/pages/index.html"> <img src="/assets/EE Logo.png" alt="logo-image"></a>
+            </div>
+            <div  class="main-header__navbar-list">
+            <ul class="main-header__navbar-list">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/events.html">Events</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+        <a class="main-header__navbar-login" href="/pages/my-account.html" >
+            <img src="/assets/login.png" alt="login/icon">
+        </a>
+            </div>
+    
+        </nav>
+
+        <div class="mobile-menu">
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <ul class="mobile-nav" id="mobile-nav">
+              <li><a href="/pages/index.html">Home</a></li>
+              <li><a href="/pages/events.html">Events</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+              <li><a href="/pages/my-account.html">My Account</a></li>
+          </ul>
+      </div>
+</header>
+    <main>
+        <h1 class="main-content__heading">Artisan Alley: Creative Craft Fair</h1>
+        <section class="event-page">
+            <div class="event-page__main">
+              <div class="event-page__main-image">
+                <img src="https://st.depositphotos.com/1021541/2285/i/600/depositphotos_22852890-stock-photo-craft-festival-in-lauderdale-by.jpg" alt="Artisan Alley main-image">
+              </div>
+          
+              <div class="event-page__details">
+                <h2>Event Details:</h2>               
+                <p>Prepare to be transported to a world of creativity and artistry at Artisan Alley: Creative Craft Fair, a vibrant celebration of handmade treasures and artistic wonders. Nestled within the picturesque setting of Artisan Park, this extraordinary event invites you to embark on a journey through the world of craft and craftsmanship. From the moment you step into the fair, you'll find yourself surrounded by a kaleidoscope of creative expressions, from intricate jewelry and textiles to unique pottery and fine art. Each booth is a treasure trove of artistic narratives, and every piece on display is a masterpiece in its own right.<br><br>
+
+                    But the Creative Craft Fair is not merely a shopping experience; it's a day dedicated to artistic immersion. Explore the diverse array of artisan showcases, where you can engage with the creative minds behind the works of art. Participate in interactive craft workshops, where you'll have the chance to create your very own piece of art under the guidance of skilled artisans. As the day unfolds, be captivated by live artisan demonstrations and Q&A sessions, providing a deeper understanding of the craftsmanship behind each creation. With a charity auction featuring handcrafted donations and a heartwarming closing ceremony, Artisan Alley is not just about art; it's about the spirit of creativity and the sense of community that comes together to celebrate the beauty of handcrafted artistry. Join us for a day of artistic exploration, where every booth tells a unique story, and the fair itself is a masterpiece of creative expression. It's a celebration of art and craft like no other, where you can take home not just treasures but memories that will last a lifetime.</p>
+                <h4>Event Schedule:</h4>
+                <p> 10:00 AM - 11:00 AM: Fair Grand Opening and Artisan Showcases<br>
+                    11:00 AM - 12:30 PM: Interactive Craft Workshops <br>
+                    12:30 PM - 2:00 PM: Artisan Demonstrations and Q&A Sessions<br>
+                    2:00 PM - 3:30 PM: Charity Auction Featuring Handcrafted Donations<br>
+                    3:30 PM - 5:00 PM: Closing Ceremony and Artisan Farewell<br></p><br>
+                <p><b>Location:</b> Artisan Park</p>
+                <p><b>Date:</b> Saturday, October 28th, 2023</p>
+                <div class="category-buttons">
+                    <a href="#" class="category-button">Arts & Entertainment</a>
+                    <a href="#" class="category-button">Family & Community</a>
+                    <a href="#" class="category-button">Community & Charity</a>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="event-page__images">
+              <h2>Event Images:</h2>
+              <div class="event-page__image-container">
+                <img src="https://www.sun-sentinel.com/wp-content/uploads/migration/2021/04/24/X3UZ54JNNFAFNMJG3MNM73EXUM.jpg" alt="Artisan Alley Image 1">
+                <img src="https://i0.wp.com/artsandfood.com/wp-content/uploads/2020/01/Screen-Shot-2020-02-10-at-10.15.55-AM.png?fit=1020%2C785&ssl=1" alt="Artisan Alley Image 2">
+                <img src="https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.coloradohomesmag.com/content/uploads/2022/06/u/b/2017ccaf-by-frank-montanez-70.jpg" alt="Artisan Alley Image 3">
+                <img src="https://i.pinimg.com/originals/77/a6/3e/77a63ed5f48caa5323e14d36e57305dd.jpg" alt="Artisan Alley Image 4">
+              </div>
+            </div>
+          </section>
+        <div class="event-page__image-modal">
+            <span class="close">&times;</span>
+            <img class="event-page__image-modal-content" id="modal-image">
+        </div>
+
+            
+    </main>
+    
+    <footer class="footer">
+
+       
+        
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/SocialMediaIcon (12).png" alt="facebook"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (10).png" alt="twitter"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (11).png" alt="instagram"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (18).png" alt="linkedin"></a>
+        </div>
+        <div class="footer__text">
+            <p>© 2023 EntertainEd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

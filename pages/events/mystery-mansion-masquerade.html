@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/app/image-modal.js"></script> 
+    <script src="/app/show-more.js"></script> 
+    <script src="/app/hamburger.js"></script> 
+    <title>Mystery Mansion Masquerade</title>
+</head>
+<body>
+    <header class="main-header">
+       
+    
+        <nav class="main-header__navbar">
+            <div class="main-header__navbar-logo">
+               <a href="/pages/index.html"> <img src="/assets/EE Logo.png" alt="logo-image"></a>
+            </div>
+            <div  class="main-header__navbar-list">
+            <ul class="main-header__navbar-list">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/events.html">Events</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+        <a class="main-header__navbar-login" href="/pages/my-account.html" >
+            <img src="/assets/login.png" alt="login-icon">
+        </a>
+            </div>
+    
+        </nav>
+
+        <div class="mobile-menu">
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <ul class="mobile-nav" id="mobile-nav">
+              <li><a href="/pages/index.html">Home</a></li>
+              <li><a href="/pages/events.html">Events</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+              <li><a href="/pages/my-account.html">My Account</a></li>
+          </ul>
+      </div>
+</header>
+    <main>
+        <h1 class="main-content__heading">Mystery Mansion Masquerade</h1>
+        <section class="event-page">
+            <div class="event-page__main">
+              <div class="event-page__main-image">
+                <img src="https://img.freepik.com/free-photo/girl-with-yellow-ornament-her-head-venetian-mask_23-2147596874.jpg?1&w=1380&t=st=1697726128~exp=1697726728~hmac=187bdf1c1ba0c0e04e035092290d1ecf2529d0546c6083e5e9993217d7d0082e" alt="Mystery Mansion Masquerade main-image">
+              </div>
+          
+              <div class="event-page__details">
+                <h2>Event Details:</h2>
+                <p>Prepare for an immersive journey into the world of intrigue and elegance at the Mystery Mansion Masquerade. Held within the enchanting setting of The Enchanted Manor, this remarkable event is a blend of a masquerade ball, murder mystery, and escape room adventure, all woven into a thrilling storyline. From the moment you enter the grand doors of the mansion, you'll be transported to a world of sophistication and mystery, where intrigue and suspense reign supreme. The evening begins with a mesmerizing masquerade ball where guests don elaborate masks and attire, concealing their true identities as they step into a grandiose world of secrets.<br><br>
+
+                    But the Masquerade is more than just a night of masked elegance; it's a captivating story that unfolds throughout the evening. Guests become characters in a mysterious narrative, as they try to unravel the enigma that surrounds The Enchanted Manor. As the night progresses, you'll find yourself entangled in a web of secrets, interacting with fellow guests, and piecing together the clues. The grand reveal takes place in an escape room adventure where guests must work together to solve the mystery. It's a night of suspense, surprise, and sophistication, where each moment is a thrilling twist in the tale. Join us for the Mystery Mansion Masquerade, a night where masks and mystery meet, and where you become a part of an unforgettable story that will keep you guessing until the very end.</p>
+                <h4>Event Schedule:</h4>
+                <p> 6:00 PM - 7:00 PM: Registration and Welcome Drinks<br>
+                    7:00 PM - 8:30 PM: Masquerade Ball and Elegant Dining <br>
+                    8:30 PM - 9:00 PM: Murder Mystery Unveiling<br>
+                    9:00 PM - 10:30 PM: Interactive Storytelling and Character Interaction<br>
+                    10:30 PM - 11:30 PM: Escape Room Adventure and Mystery Resolution<br>
+                    11:30 PM - 12:00 AM: Grand Reveal and Farewell</p><br>
+                <p><b>Location:</b> The Enchanted Manor</p>
+                <p><b>Date:</b> Friday, November 03th, 2023</p>
+                <div class="category-buttons">
+                    <a href="#" class="category-button">Arts & Entertainment</a>
+                    <a href="#" class="category-button">Community & Charity</a>
+                    <a href="#" class="category-button">Family & Community</a>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="event-page__images">
+              <h2>Event Images:</h2>
+              <div class="event-page__image-container">
+                <img src="https://viverehotel.com.ph/wp-content/uploads/2019/09/adult-bar-birthday-787961.jpg" alt="Mystery Mansion Masquerade Image 1">
+                <img src="https://wp-media-partyslate.imgix.net/2023/03/luminous-masquerade-ball-at-gotham-hall-in-new-york-ny_1438218.jpg?auto=compress%2Cformat&ixlib=php-3.3.1" alt="Mystery Mansion Masquerade Image 2">
+                <img src="https://hotspotsmagazine.com/wp-content/uploads/2019/08/Pridelines-Annual-2019-Masquerade-Ball.jpg" alt="Mystery Mansion Masquerade Image 3">
+                <img src="https://www.sydneyprops.com.au/wp-content/uploads/2019/11/Masquerade0004.jpg" alt="Mystery Mansion Masquerade Image 4">
+              </div>
+            </div>
+          </section>
+        <div class="event-page__image-modal">
+            <span class="close">&times;</span>
+            <img class="event-page__image-modal-content" id="modal-image">
+        </div>
+
+            
+    </main>
+    
+    <footer class="footer">
+
+       
+        
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/SocialMediaIcon (12).png" alt="facebook"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (10).png" alt="twitter"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (11).png" alt="instagram"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (18).png" alt="linkedin"></a>
+        </div>
+        <div class="footer__text">
+            <p>© 2023 EntertainEd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

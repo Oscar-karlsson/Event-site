@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/app/image-modal.js"></script> 
+    <script src="/app/show-more.js"></script> 
+    <script src="/app/hamburger.js"></script> 
+    <title>Foodie Fiesta: A Global Culinary Adventure</title>
+</head>
+<body>
+    <header class="main-header">
+       
+    
+        <nav class="main-header__navbar">
+            <div class="main-header__navbar-logo">
+               <a href="/pages/index.html"> <img src="/assets/EE Logo.png" alt="logo-image"></a>
+            </div>
+            <div  class="main-header__navbar-list">
+            <ul class="main-header__navbar-list">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/events.html">Events</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+        <a class="main-header__navbar-login" href="/pages/my-account.html" >
+            <img src="/assets/login.png" alt="login-icon">
+        </a>
+            </div>
+    
+        </nav>
+
+        <div class="mobile-menu">
+          <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+          <ul class="mobile-nav" id="mobile-nav">
+              <li><a href="/pages/index.html">Home</a></li>
+              <li><a href="/pages/events.html">Events</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+              <li><a href="/pages/my-account.html">My Account</a></li>
+          </ul>
+      </div>
+</header>
+    <main>
+        <h1 class="main-content__heading">Foodie Fiesta: A Global Culinary Adventure</h1>
+        <section class="event-page">
+            <div class="event-page__main">
+              <div class="event-page__main-image">
+                <img src="https://st2.depositphotos.com/4294211/7300/i/600/depositphotos_73006289-stock-photo-food-truck-or-rolling-kitchen.jpg" alt="Foodie Fiesta main-image">
+              </div>
+          
+              <div class="event-page__details">
+                <h2>Event Details:</h2>
+              
+                <p>Prepare your taste buds for an epic journey around the world at Foodie Fiesta: A Global Culinary Adventure. Held at the culinary haven known as Culinary Haven Plaza, this extraordinary event is a celebration of diverse flavors and international gastronomy. From the moment you step in, you're transported to a realm where the aromas of global cuisines waft through the air, and the vibrant colors of exotic dishes beckon you to explore. It's a day dedicated to savoring the world's most delectable flavors, all in one location.<br><br>
+
+                    Foodie Fiesta goes beyond being a food festival; it's an immersive experience for the senses. Discover a world of flavors as you meander through a culinary wonderland, sampling mouthwatering dishes from various corners of the globe. Engage with passionate chefs who share their culinary secrets, and delight in interactive cooking demonstrations. The day is a fusion of tastes, cultures, and traditions, making it the perfect outing for food enthusiasts, families, and anyone seeking a global culinary adventure. With live music, cultural performances, and an array of delicious international cuisine, Foodie Fiesta is an unforgettable culinary journey that will satisfy your wanderlust and leave you with a newfound appreciation for the world's diverse flavors. Join us for a day of culinary exploration and indulge in the joy of global cuisine like never before.</p>
+                <h4>Event Schedule:</h4>
+                <p> 11:00 AM - 12:00 PM: Event Opening and Global Cuisine Showcase<br>
+                    12:00 PM - 1:30 PM: Interactive Cooking Demonstrations by World-Renowned Chefs <br>
+                    1:30 PM - 3:00 PM: International Food Tasting and Sampling<br>
+                    3:00 PM - 4:30 PM: Live Music and Cultural Performances<br>
+                    4:30 PM - 6:00 PM: Culinary Competitions and Awards<br>
+                    6:00 PM - 8:00 PM: Evening Buffet and Farewell</p><br>
+                <p><b>Location:</b> Downtown Plaza</p>
+                <p><b>Date:</b> Friday, October 27th, 2023</p>
+                <div class="category-buttons">
+                    <a href="#" class="category-button">Culinary Adventures</a>
+                    <a href="#" class="category-button">Community & Charity</a>
+                    <a href="#" class="category-button">Family & Community</a>
+                  </div>
+              </div>
+            </div>
+          
+            <div class="event-page__images">
+              <h2>Event Images:</h2>
+              <div class="event-page__image-container">
+                <img src="https://www.coloradoan.com/gcdn/-mm-/13741235d6ad02f5f79fa658d11b496bccb87143/c=0-289-2821-1883/local/-/media/2018/05/03/FortCollins/FortCollins/636609473605253011-FTCBrd-07-16-2017-Beacon-1-W002-2017-07-14-IMG-636301391458736627-F-1-1-A3J006N8-L1063964535-IMG-636301391458736627-F-1-1-A3J006N8.jpg?width=2821&height=1594&fit=crop&format=pjpg&auto=webp" alt="Foodie Fiesta Image 1">
+                <img src="https://townsquare.media/site/48/files/2022/04/attachment-food.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89" alt="Foodie Fiesta Image 2">
+                <img src="https://www.mtlblog.com/media-library/image.jpg?id=26898730&width=1245&height=700&coordinates=0%2C104%2C0%2C104" alt="Foodie Fiesta Image 3">
+                <img src="https://wishuponafoodtruck.files.wordpress.com/2020/02/mdfoodtruckfestival_7.jpg" alt="Foodie Fiesta Image 4">
+              </div>
+            </div>
+          </section>
+        <div class="event-page__image-modal">
+            <span class="close">&times;</span>
+            <img class="event-page__image-modal-content" id="modal-image">
+        </div>
+
+            
+    </main>
+    
+    <footer class="footer">
+
+       
+        
+        <div class="footer__socials">
+            <a href="#"><img src="/assets/SocialMediaIcon (12).png" alt="facebook"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (10).png" alt="twitter"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (11).png" alt="instagram"></a>
+            <a href="#"><img src="/assets/SocialMediaIcon (18).png" alt="linkedin"></a>
+        </div>
+        <div class="footer__text">
+            <p>© 2023 EntertainEd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

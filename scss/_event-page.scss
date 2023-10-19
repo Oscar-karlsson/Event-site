@@ -24,7 +24,7 @@
     .event-page__main-image {
       display: flex;
       flex-direction: column;
-      width: 60%;
+      max-width: 60%;
       margin-right: 20px;
   
       img {
@@ -35,10 +35,11 @@
     }
   
     .event-page__details {
-    //   flex: 1;
+      flex: 1;
       font-size: 16px;
       color: $text-color;
       margin: 0;
+      max-width: 60%;
 
       
   
@@ -47,7 +48,15 @@
     h2 {
       font-size: 20px;
       font-weight: bold;
-      margin: 20px 0;
+      margin: 20px 0 5px 0;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    h4 {
+      margin-bottom: 0;
     }
   
     .event-page__image-container {
@@ -92,7 +101,11 @@
     max-height: 80%;
     margin: auto;
     display: block;
-    margin-top: 5%;
+    margin-top: 10%;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 50%;
+    }
 }
 
 .event-page__image-modal .close {
@@ -103,4 +116,10 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
+    
+@media screen and (max-width: 768px) {
+  top: 23%;
+  right: 5%;
+}
+
 }
