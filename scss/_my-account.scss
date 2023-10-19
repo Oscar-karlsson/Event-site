@@ -12,7 +12,6 @@
     width: 10%;
     min-width: 250px;
     padding: 20px 0 0 10px;
-    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     overflow-y: auto;
 
     ul {
@@ -30,7 +29,7 @@
                 transition: background-color 0.3s;
 
                 &:hover {
-                    background-color: #555;
+                    background-color: $event-location-color
                 }
             }
         }
@@ -41,9 +40,9 @@
          }
     }
     @media screen and (max-width: 768px) {
-        width: 100px; // Adjust the width to a smaller value for smaller screens
-        min-width: auto; // Remove the minimum width for smaller screens
-        padding: 10px; // Adjust the padding if needed
+        width: 100px; 
+        min-width: auto; 
+        padding: 10px; 
 
         a {
             flex-direction: column;
@@ -69,7 +68,6 @@
     background-color: $background-color;
     flex: 1;
     padding: 20px;
-    // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
     overflow-y: auto;
 
     .dashboard-section {
@@ -100,7 +98,7 @@
 
         button {
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: $primary-accent-color;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -111,7 +109,7 @@
             margin-top: 10px;
 
             &:hover {
-                background-color: #0056b3;
+                background-color: $primary-accent-color-hover;
             }
         }
     }
@@ -132,7 +130,7 @@
 
         .image-placeholder {
 
-            max-width: 350px; /* Adjust this value for your desired image width */
+            max-width: 350px; 
             height: 200px;
             border: 1px solid #ddd;
             overflow: hidden;
@@ -169,7 +167,6 @@
         }
     }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
     .form-group {
         flex-wrap: wrap;
@@ -205,8 +202,8 @@ textarea {
         background-color: #f4f4f4;
         border: 1px solid #ccc;
         border-radius: 5px;
-        max-height: 90px; /* Set the maximum height to define the scrollable area */
-        overflow-y: scroll; /* Enable vertical scrolling */
+        max-height: 90px; 
+        overflow-y: scroll; 
 
         @media (max-width: 768px) {
             max-height: 138px;
@@ -233,8 +230,8 @@ textarea {
     border-radius: 8px;
 
     .category-item {
-        display: flex; /* Display category items as a row */
-        align-items: center; /* Vertically center the checkbox and label */
+        display: flex; 
+        align-items: center; 
         justify-content: center;
         padding: 16px 16px;
         border: 2px solid $border-buttom-color;
@@ -254,12 +251,11 @@ textarea {
     }
 
     .category-item input[type="checkbox"] {
-        margin-right: 10px; /* Add some spacing between the checkbox and label text */
+        margin-right: 10px; 
         margin-top: 0px;
     }
 
     @media (max-width: 768px) {
-        /* Switch to column layout when the screen width is 768px or smaller */
         flex-direction: column;
         overflow-y: scroll;
         display: block;
