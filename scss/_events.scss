@@ -3,7 +3,7 @@
 .main-content__heading-event {
       text-align: center;
       border-bottom: solid 1px $border-buttom-color;
-      color: $secondary-accent-color;
+      color: $h1-color;
       width: 80%;
       margin: 100px auto;
   }
@@ -62,7 +62,7 @@
         flex-direction: column;
 
         .event-site-day {
-            font-size: 24px;
+            font-size:  1.5rem;
             font-weight: bold;
             margin: 0 5px 0 0;
             padding: 0;
@@ -70,14 +70,14 @@
         }
 
         .event-site-month {
-            font-size: 18px;
+            font-size: 1.125rem;
             margin: 0;
             padding: 0;
             color: $neutral-text-color;
         }
 
         .event-site-info {
-            // Styles for event info here
+           
 
             .event-site-title {
                 font-size: 1.2rem;
@@ -86,7 +86,7 @@
             }
 
             .event-site-location {
-                font-size: 14px;
+                font-size: 0.875rem;
                 color: $event-location-color;
                 margin: 5px 0;
             }
@@ -103,7 +103,7 @@
                     border: none;
                     border-radius: 4px;
                     padding: 5px 10px;
-                    font-size: 11px;
+                    font-size: 0.6875rem;
                     cursor: pointer;
                     transition: background-color 0.3s;
 
@@ -118,13 +118,17 @@
                 padding: 10px 20px;
                 background-color: $primary-accent-color;
                 color: $button-text-color;
-                text-decoration: none; /* Remove the default underline */
                 border-radius: 5px;
                 text-align: center;
                 font-weight: bold;
                 transition: background-color 0.3s ease;
                 cursor: pointer;
                 margin-top: 10px;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    
+                }
 
                 &:hover {
                     background-color: $primary-accent-color-hover;

@@ -48,7 +48,13 @@
 
     h1 {
       margin: 0;
-      color: $secondary-accent-color;
+      flex: 1;
+      color: $h1-color;
+
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        font-size: 1.5rem;
+        
+      }
     }
 
     .main-header__text-button__btn {
@@ -79,7 +85,6 @@
   left: 0;
   width: 100%;
   background-color: $background-color;
-  // box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
   border-bottom: solid 1px $border-buttom-color;
 
   .main-header__navbar {
@@ -127,10 +132,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 100px;
+    margin: 8px 0 0 100px;
 
     & img {
-      width: 60px;
+      width: 180px;
       height: auto;
     }
   }
@@ -288,6 +293,12 @@
 
 .countdown-container {
   text-align: center;
+
+
+  @media screen and (max-width: 768px) {
+    margin-top: 100px;
+    padding: 10px;
+  }
 }
 
 .countdown-title {
@@ -312,14 +323,14 @@
     }
 
     .countdown-number {
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: bold;
       color: $primary-accent-color; /* Replace with your desired color */
       display: block;
     }
 
     .countdown-label {
-      font-size: 18px;
+      font-size: 1.125rem;
       color: $text-color; /* Replace with your desired color */
     }
   }
@@ -328,7 +339,7 @@
 .main-content__heading {
   text-align: center;
   border-bottom: solid 1px $border-buttom-color;
-  color: $secondary-accent-color;
+  color: $h1-color;
   width: 100%;
   margin: 100px auto 20px auto;
 
@@ -346,7 +357,7 @@
 // Style the "Upcoming Events" heading
 .event-heading {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: $secondary-accent-color;
   // margin-bottom: 40px;
   margin: 0 auto 40px auto;
@@ -396,7 +407,7 @@
         margin-right: 10px;
 
         .day {
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: bold;
           margin: 0 5px 0 0;
           padding: 0;
@@ -404,7 +415,7 @@
         }
 
         .month {
-          font-size: 18px;
+          font-size: 1.125rem;
           margin: 0;
           padding: 0;
           color: $neutral-text-color;
@@ -415,6 +426,7 @@
         flex-grow: 1;
 
         .event-title {
+          padding: 0 1px 0 1px;
           font-size: 1.2rem;
           font-weight: bold;
           margin: 0;
@@ -423,16 +435,17 @@
           margin-bottom: 10px;
           align-content: center;
           justify-content: center;
+          align-items: center;
         }
 
         .event-location {
-          font-size: 14px;
+          font-size: 0.875rem;
           color: $event-location-color;
           margin: 5px 0;
         }
 
         .event-description {
-          font-size: 14px;
+          font-size: 0.875rem;
           margin-top: 10px;
           text-align: left;
           color: $text-color;
@@ -464,7 +477,7 @@
     border: none;
     border-radius: 4px;
     padding: 5px 5px;
-    font-size: 10px;
+    font-size: 0.625rem;
     cursor: pointer;
     transition: background-color 0.3s;
 
@@ -477,7 +490,7 @@
 /* Style for Show More link */
 .event-show-more {
   text-align: left;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: $primary-accent-color;
   cursor: pointer;
 
@@ -509,7 +522,7 @@
 
     p {
       font-size: 1rem;
-      color: #555;
+      color: $event-location-color;
       margin-bottom: 20px;
     }
 
@@ -529,7 +542,7 @@
       input[type="email"] {
         width: 100%;
         padding: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid $event-location-color;
         border-radius: 4px;
         font-size: 1rem;
         margin-bottom: 10px;
@@ -537,14 +550,18 @@
       }
 
       button {
-        background-color: #007bff;
-        color: #fff;
+        background-color: $primary-accent-color;
+        color: $button-text-color;
         padding: 10px 20px;
         border: none;
         border-radius: 4px;
         font-size: 1rem;
         cursor: pointer;
         margin-bottom: 0;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 5px;
+        }
 
         &:hover {
           background-color: #0056b3;

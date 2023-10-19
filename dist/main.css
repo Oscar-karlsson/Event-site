@@ -58,11 +58,18 @@ h1 {
   color: #007BFF;
 }
 
-h2, h3 {
+h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #FF8A9A;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #449944;
 }
 
 p {
@@ -87,7 +94,7 @@ a:hover {
 .main-content__heading-event {
   text-align: center;
   border-bottom: solid 1px #eae3e3;
-  color: #FF8A9A;
+  color: #FF5733;
   width: 80%;
   margin: 100px auto;
 }
@@ -135,14 +142,14 @@ a:hover {
   flex-direction: column;
 }
 .event-site-details .event-site-day {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0 5px 0 0;
   padding: 0;
   color: #007BFF;
 }
 .event-site-details .event-site-month {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -153,7 +160,7 @@ a:hover {
   margin-bottom: 10px;
 }
 .event-site-details .event-site-info .event-site-location {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #555;
   margin: 5px 0;
 }
@@ -169,7 +176,7 @@ a:hover {
   border: none;
   border-radius: 4px;
   padding: 5px 10px;
-  font-size: 11px;
+  font-size: 0.6875rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -181,13 +188,17 @@ a:hover {
   padding: 10px 20px;
   background-color: #007BFF;
   color: #fff;
-  text-decoration: none; /* Remove the default underline */
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
   transition: background-color 0.3s ease;
   cursor: pointer;
   margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .event-site-details .event-site-info .event-site-details__event-btn {
+    display: block;
+  }
 }
 .event-site-details .event-site-info .event-site-details__event-btn:hover {
   background-color: #0062cc;
@@ -255,7 +266,7 @@ a:hover {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   transition: background-color 0.3s;
 }
 .ceo .ceo-info .contact-buttons .contact-button:hover {
@@ -352,7 +363,7 @@ a:hover {
   padding-top: 30px;
 }
 .contact-form h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
 }
 .contact-form form {
@@ -362,14 +373,14 @@ a:hover {
   margin: 0 10px 40px 10px;
 }
 .contact-form form label {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
 }
 .contact-form form input, .contact-form form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .contact-form form input:focus, .contact-form form textarea:focus {
   border-color: #007bff;
@@ -383,7 +394,7 @@ a:hover {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
 }
 .contact-form form .submit-button:hover {
@@ -461,7 +472,7 @@ a:hover {
   display: block;
 }
 .dashboard-content .dashboard-section h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .dashboard-content .dashboard-section label {
   display: block;
@@ -483,7 +494,7 @@ a:hover {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   transition: background-color 0.3s;
   margin-top: 10px;
 }
@@ -671,13 +682,13 @@ textarea {
 }
 .event-page .event-page__details {
   flex: 1;
-  font-size: 16px;
+  font-size: 1rem;
   color: #1e050e;
   margin: 0;
   max-width: 60%;
 }
 .event-page h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   margin: 20px 0 5px 0;
 }
@@ -728,7 +739,7 @@ textarea {
   max-height: 80%;
   margin: auto;
   display: block;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 @media screen and (max-width: 768px) {
   .event-page__image-modal-content {
@@ -740,7 +751,7 @@ textarea {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   cursor: pointer;
@@ -790,7 +801,13 @@ textarea {
 }
 .main-header .main-header__text-button h1 {
   margin: 0;
-  color: #FF8A9A;
+  flex: 1;
+  color: #FF5733;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .main-header .main-header__text-button h1 {
+    font-size: 1.5rem;
+  }
 }
 .main-header .main-header__text-button .main-header__text-button__btn {
   display: inline-block;
@@ -858,10 +875,10 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 100px;
+  margin: 8px 0 0 100px;
 }
 .main-header__navbar .main-header__navbar-logo img {
-  width: 60px;
+  width: 180px;
   height: auto;
 }
 
@@ -1002,6 +1019,12 @@ textarea {
 .countdown-container {
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .countdown-container {
+    margin-top: 100px;
+    padding: 10px;
+  }
+}
 
 .countdown-title {
   display: block;
@@ -1024,20 +1047,20 @@ textarea {
   margin-right: 0;
 }
 .countdown .countdown-item .countdown-number {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
   color: #007BFF; /* Replace with your desired color */
   display: block;
 }
 .countdown .countdown-item .countdown-label {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #1e050e; /* Replace with your desired color */
 }
 
 .main-content__heading {
   text-align: center;
   border-bottom: solid 1px #eae3e3;
-  color: #FF8A9A;
+  color: #FF5733;
   width: 100%;
   margin: 100px auto 20px auto;
 }
@@ -1055,7 +1078,7 @@ textarea {
 
 .event-heading {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #FF8A9A;
   margin: 0 auto 40px auto;
   border-bottom: solid 1px #eae3e3;
@@ -1101,14 +1124,14 @@ textarea {
   margin-right: 10px;
 }
 .event-grid .event-card .event-details .event-date .day {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0 5px 0 0;
   padding: 0;
   color: #007BFF;
 }
 .event-grid .event-card .event-details .event-date .month {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -1117,6 +1140,7 @@ textarea {
   flex-grow: 1;
 }
 .event-grid .event-card .event-details .event-info .event-title {
+  padding: 0 1px 0 1px;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0;
@@ -1125,14 +1149,15 @@ textarea {
   margin-bottom: 10px;
   align-content: center;
   justify-content: center;
+  align-items: center;
 }
 .event-grid .event-card .event-details .event-info .event-location {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #555;
   margin: 5px 0;
 }
 .event-grid .event-card .event-details .event-info .event-description {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-top: 10px;
   text-align: left;
   color: #1e050e;
@@ -1158,7 +1183,7 @@ textarea {
   border: none;
   border-radius: 4px;
   padding: 5px 5px;
-  font-size: 10px;
+  font-size: 0.625rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -1169,7 +1194,7 @@ textarea {
 /* Style for Show More link */
 .event-show-more {
   text-align: left;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #007BFF;
   cursor: pointer;
 }
@@ -1219,14 +1244,14 @@ textarea {
 .newsletter .newsletter-content .subscribe-form input[type=email] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   border-radius: 4px;
   font-size: 1rem;
   margin-bottom: 10px;
   margin-bottom: 0;
 }
 .newsletter .newsletter-content .subscribe-form button {
-  background-color: #007bff;
+  background-color: #007BFF;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -1234,6 +1259,11 @@ textarea {
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .newsletter .newsletter-content .subscribe-form button {
+    margin-top: 5px;
+  }
 }
 .newsletter .newsletter-content .subscribe-form button:hover {
   background-color: #0056b3;
