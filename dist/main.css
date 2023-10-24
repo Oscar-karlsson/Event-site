@@ -670,7 +670,7 @@ textarea {
 .event-page .event-page__main-image {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  width: 50%;
   margin-right: 20px;
 }
 .event-page .event-page__main-image img {
@@ -683,7 +683,7 @@ textarea {
   font-size: 1rem;
   color: #1e050e;
   margin: 0;
-  max-width: 60%;
+  width: 50%;
 }
 .event-page h2 {
   font-size: 1.25rem;
@@ -764,11 +764,11 @@ textarea {
 .main-header {
   position: relative;
 }
-.main-header .main-header__header-img img {
+.main-header .main-header__image img {
   width: 100%;
   height: 500px;
 }
-.main-header .main-header__header-img::before {
+.main-header .main-header__image::before {
   content: "";
   position: absolute;
   bottom: 0;
