@@ -299,7 +299,6 @@ a:hover {
 .meet-our-team {
   text-align: center;
   margin: 0px 0 20px 0;
-  background-color: #EFF5F7;
   padding: 40px;
 }
 .meet-our-team h2 {
@@ -311,7 +310,7 @@ a:hover {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 30px;
   justify-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .team-members .team-members__person {
   max-width: 250px;
@@ -1050,9 +1049,19 @@ textarea {
   color: #007BFF; /* Replace with your desired color */
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .countdown .countdown-item .countdown-number {
+    font-size: 1.5rem;
+  }
+}
 .countdown .countdown-item .countdown-label {
   font-size: 1.125rem;
   color: #1e050e; /* Replace with your desired color */
+}
+@media screen and (max-width: 768px) {
+  .countdown .countdown-item .countdown-label {
+    font-size: 0.875rem;
+  }
 }
 
 .nine h2 {

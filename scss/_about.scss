@@ -120,7 +120,7 @@
 .meet-our-team {
     text-align: center;
     margin: 0px 0 20px 0;
-    background-color: $background-color;
+    // background-color: $background-color;
     padding: 40px;
 
     h2 {
@@ -134,7 +134,7 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px; 
     justify-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   
     .team-members__person {
       max-width: 250px;

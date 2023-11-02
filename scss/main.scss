@@ -325,11 +325,19 @@
       font-weight: bold;
       color: $primary-accent-color; /* Replace with your desired color */
       display: block;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
 
     .countdown-label {
       font-size: 1.125rem;
       color: $text-color; /* Replace with your desired color */
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.875rem;
+      }
     }
   }
 }
