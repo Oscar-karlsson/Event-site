@@ -131,10 +131,11 @@
 
 .team-members {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 30px; 
     justify-items: center;
     justify-content: center;
+    align-content: center;
   
     .team-members__person {
       max-width: 250px;

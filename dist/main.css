@@ -307,10 +307,11 @@ a:hover {
 
 .team-members {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 30px;
   justify-items: center;
   justify-content: center;
+  align-content: center;
 }
 .team-members .team-members__person {
   max-width: 250px;
@@ -1095,12 +1096,6 @@ textarea {
   grid-gap: 20px;
   align-items: center;
 }
-@media screen and (max-width: 992px) {
-  .nine h2 span {
-    font-size: 0.75rem;
-    margin-left: -1rem;
-  }
-}
 
 .nine h2 span:after,
 .nine h2 span:before {
@@ -1122,6 +1117,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .main-content__heading {
     padding: 0 10px 10px 10px;
+    font-size: 1.5rem;
   }
 }
 

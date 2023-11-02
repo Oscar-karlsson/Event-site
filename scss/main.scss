@@ -371,11 +371,12 @@
   grid-template-rows: 27px 0;
   grid-gap: 20px;
   align-items: center;
+  
 
-  @media screen and (max-width: 992px) {
-    font-size: 0.75rem;
-    margin-left: -1rem;
-  }
+  // @media screen and (max-width: 992px) {
+  //   font-size: 0.75rem;
+  //   margin-left: -1.3rem;
+  // }
 }
 
 .nine h2 span:after,
@@ -397,6 +398,7 @@
 
   @media screen and (max-width: 768px) {
     padding: 0 10px 10px 10px;
+    font-size: 1.5rem;
   }
 }
 
@@ -414,6 +416,7 @@
   // margin-bottom: 40px;
   margin: 0 auto 40px auto;
   border-bottom: solid 1px $border-buttom-color;
+
 }
 
 // Style the event grid
