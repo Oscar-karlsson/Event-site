@@ -1096,6 +1096,12 @@ textarea {
   grid-gap: 20px;
   align-items: center;
 }
+@media screen and (max-width: 992px) {
+  .nine h2 span {
+    font-size: 0.75rem;
+    margin-left: -1.3rem;
+  }
+}
 
 .nine h2 span:after,
 .nine h2 span:before {

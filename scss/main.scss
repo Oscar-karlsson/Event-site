@@ -373,10 +373,10 @@
   align-items: center;
   
 
-  // @media screen and (max-width: 992px) {
-  //   font-size: 0.75rem;
-  //   margin-left: -1.3rem;
-  // }
+  @media screen and (max-width: 992px) {
+    font-size: 0.75rem;
+    margin-left: -1.3rem;
+  }
 }
 
 .nine h2 span:after,
