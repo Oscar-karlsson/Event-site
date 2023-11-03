@@ -1074,7 +1074,7 @@ textarea {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nine h2 {
     font-size: 1.7rem;
   }
