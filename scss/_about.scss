@@ -5,6 +5,10 @@
     width: 80%;
     margin: 0 auto;
 
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
 
     h2 {
         margin-bottom: 20px;
@@ -28,6 +32,10 @@
     background-color: $background-color;
     padding: 40px;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
 
     h2 {
         text-align: center;
@@ -122,6 +130,8 @@
     margin: 0px 0 20px 0;
     // background-color: $background-color;
     padding: 40px;
+
+   
 
     h2 {
         margin-bottom: 40px;

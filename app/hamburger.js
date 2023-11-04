@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             // Animate the menu items
             menuItems.forEach((item, index) => {
-                item.style.animation = `fadeIn 0.3s ease-in forwards ${index * 0.3}s`;
+                item.style.animation = `fadeIn 0.3s ease-in forwards ${index * 0.1}s`;
             }
         )} else {
             hamburger.classList.remove("active");

@@ -209,6 +209,11 @@ a:hover {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .main-content {
+    width: 100%;
+  }
+}
 .main-content h2 {
   margin-bottom: 20px;
   text-align: center;
@@ -226,6 +231,11 @@ a:hover {
   background-color: #EFF5F7;
   padding: 40px;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .ceo {
+    padding: 10px;
+  }
 }
 .ceo h2 {
   text-align: center;
@@ -673,6 +683,12 @@ textarea {
   width: 50%;
   margin-right: 20px;
 }
+@media screen and (max-width: 768px) {
+  .event-page .event-page__main-image {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .event-page .event-page__main-image img {
   width: 100%;
   height: auto;
@@ -684,6 +700,11 @@ textarea {
   color: #1e050e;
   margin: 0;
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .event-page .event-page__details {
+    width: 100%;
+  }
 }
 .event-page h2 {
   font-size: 1.25rem;
@@ -1099,7 +1120,7 @@ textarea {
 @media screen and (max-width: 992px) {
   .nine h2 span {
     font-size: 0.75rem;
-    margin-left: -1.3rem;
+    margin-left: -1rem;
   }
 }
 

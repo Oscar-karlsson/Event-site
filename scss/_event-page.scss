@@ -26,6 +26,11 @@
       flex-direction: column;
       width: 50%;
       margin-right: 20px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-right: 0;
+      }
   
       img {
         width: 100%;
@@ -40,6 +45,10 @@
       color: $text-color;
       margin: 0;
       width: 50%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
 
       
   
